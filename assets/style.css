@@ -2,3 +2,26 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.hero .col img {
+    width: 500px;
+}
+
+.about .col img {
+    width: 50%
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 510px){
+    .hero .col img {
+        width: 100%;
+    }
+}
+
+.about .col img {
+    width: 80%
+}
