@@ -9,6 +9,14 @@
       href="./assets/image/idn.png"
       type="image/x-icon"
     />
+    <!-- CDN Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- CSS Bootstrap -->
     <link
@@ -70,10 +78,12 @@
     <!-- Hero Section -->
     <section id="hero">
       <div class="container">
-        <div class="hero row align-items-center gap-5 flex-nowrap flex-column text-center text-lg-start flex-lg-row">
+        <div
+          class="hero row align-items-center gap-5 flex-nowrap flex-column text-center text-lg-start flex-lg-row"
+        >
           <div class="col">
             <h1 class="fw-bold">
-              Selamat datang di <br/>
+              Selamat datang di <br />
               <span class="text-primary">Aplikasi IDN E-Report 2026</span> Forum
               Pengaduan
             </h1>
@@ -95,7 +105,7 @@
     </section>
 
     <!-- About Section -->
-     <section id="about">
+    <section id="about">
       <div class="container">
         <div class="about row">
           <div class="col text-center">
@@ -107,12 +117,112 @@
               untuk mendengarkan suara masyarakat dan memberikan solusi yang
               tepat.
             </p>
-            <img src="./assets/image/team.png" alt="Team Image">
+            <img src="./assets/image/team.png" alt="Team Image" />
           </div>
         </div>
       </div>
-     </section>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div>
+          <h1 class="fw-bold text-primary">Layanan Kami</h1>
+          <p class="lh-lg">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+            perferendis laboriosam quos optio quis temporibus dolore nobis, modi
+            qui incidunt illum cumque at, exercitationem veritatis vero quaerat
+            possimus cum in.
+          </p>
+        </div>
+        <!-- ditambah p-lg-0 untuk menghilangkan padding pada layar besar(Laptop) -->
+        <div class="row p-4 p-lg-0 gap-4 gap-lg-2">
+          <div
+            class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h4 class="fw-semibold">Pengaduan Akademik</h4>
+            <p class="lh-lg mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ea? Quisquam placeat necessitatibus cupiditate vel.
+            </p>
+          </div>
+          <div
+            class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
+          >
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4 class="fw-semibold">Pengaduan Fasilitas</h4>
+            <p class="lh-lg mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ea? Quisquam placeat necessitatibus cupiditate vel.
+            </p>
+          </div>
+          <div
+            class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
+          >
+            <i class="fa-solid fa-user-secret"></i>
+            <h4 class="fw-semibold">Pengaduan Anonymous</h4>
+            <p class="lh-lg mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+              ea? Quisquam placeat necessitatibus cupiditate vel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Section -->
+    <section id="recent">
+      <div class="container">
+        <div class="text-end mb-5">
+          <h1 class="fw-bold text-primary">Laporan Terbaru</h1>
+          <p class="lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            numquam tempora quod consectetur aliquam officia quas? Eos sequi
+            dolore tempore eius, dolorum nihil recusandae excepturi.
+          </p>
+        </div>
+        <!-- setiap column itu ada 12, maka dibagi 4 agar masing-masing column memiliki lebar 3 dan sebaris -->
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <p style="background-color: rgba(0, 0, 0, 0.3);" class="position-absolute text-white px-3 py-2">Akademik</p>
+                <img style="height: 250px; object-fit: cover;" src="./assets/image/kelas-kotor-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laporan Kelas Kotor</h5>
+                  <p class="mb-4">By: <a href="" class="text-decoration-none">Hafidz Nurfikri</a> 2 days ago</p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <p style="background-color: rgba(0, 0, 0, 0.3);" class="position-absolute text-white px-3 py-2">Anonymous</p>
+                <img style="height: 250px; object-fit: cover;" src="./assets/image/maling.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laporan Maling</h5>
+                  <p class="mb-4">By: <a href="" class="text-decoration-none">Hafidz Nurfikri</a> 2 days ago</p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <p style="background-color: rgba(0, 0, 0, 0.3);" class="position-absolute text-white px-3 py-2">Akademik</p>
+                <img style="height: 250px; object-fit: cover;" src="./assets/image/kelas-kotor-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laporan Kelas Kotor</h5>
+                  <p class="mb-4">By: <a href="" class="text-decoration-none">Hafidz Nurfikri</a> 2 days ago</p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <!-- JS Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
