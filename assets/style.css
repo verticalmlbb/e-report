@@ -16,14 +16,36 @@ section {
     padding-bottom: 50px;
 }
 
+.about .col img {
+    width: 80%
+}
+
+footer {
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    opacity: 75%;
+}
+
+.footer-link:hover {
+    opacity: 100%;
+    color:azure;
+}
+
+.copyright {
+    margin-top: 100px;
+}
+
 @media screen and (max-width: 510px){
     .hero .col img {
         width: 100%;
     }
 }
 
-.about .col img {
-    width: 80%
-}
+
+
+
 
 

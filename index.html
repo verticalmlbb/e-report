@@ -56,19 +56,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Home</a>
+              <a class="nav-link text-primary" href="#hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">About</a>
+              <a class="nav-link text-primary" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Services</a>
+              <a class="nav-link text-primary" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Recent</a>
+              <a class="nav-link text-primary" href="#recent">Recent</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">FAQ</a>
+              <a class="nav-link text-primary" href="#faq">FAQ</a>
             </li>
           </ul>
         </div>
@@ -183,7 +183,7 @@
           </p>
         </div>
         <!-- setiap column itu ada 12, maka dibagi 4 agar masing-masing column memiliki lebar 3 dan sebaris -->
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="card">
               <p
@@ -272,12 +272,18 @@
             </div>
           </div>
         </div>
+        <a
+          class="text-center d-block link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          href="#"
+        >
+          Lihat Semua Laporan <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </section>
 
     <!-- FAQ Section -->
     <section>
-      <div class="container">
+      <div id="faq" class="container">
         <div class="row text-center">
           <h1 class="fw-bold text-primary">FAQ</h1>
           <p class="lh-lg">
@@ -470,6 +476,57 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-subtle py-5">
+      <div class="container">
+        <div class="row justify-content-between row-gap-4 row-gap-md-0">
+          <div class="col-md-4 ">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img class="rounded" src="./assets/image/idn.png" width="35" height="38" alt="IDN Logo" />
+              <h3 class="mb-0 fw-bold">E-Report</h3>
+            </div>
+            <p class="opacity-75 lh-lg mb-0">
+              E-Report IDN adalah platform pengaduan online yang memungkinkan
+              masyarakat untuk menyampaikan keluhan, masukan, atau aspirasi
+              terkait layanan publik. Dengan E-Report IDN, kami berkomitmen
+              untuk mendengarkan suara masyarakat dan memberikan solusi yang
+              tepat.
+            </p>
+          </div>
+          <div class="col-md-2 d-flex flex-column gap-2">
+              <h4 class="fw-bold">Menu</h4>
+              <a class="text-decoration-none footer-link" href="#hero">Home</a>
+              <a class="text-decoration-none footer-link" href="#about">About</a>
+              <a class="text-decoration-none footer-link" href="#services">Services</a>
+              <a class="text-decoration-none footer-link" href="#recent">Recents</a>
+              <a class="text-decoration-none footer-link" href="#faq">FAQ</a>
+          </div>
+          <div class="col-md-4 d-flex flex-column gap-4">
+            <h4 class="fw-bold">Contact Us</h4>
+            <a class="text-decoration-none footer-link d-flex align-items-center gap-2" href="mailto:verticalmlbb@gmail.com">
+              <i class="fa-solid fa-envelope"></i> 
+              verticalmlbb@gmail.com
+            </a>
+            <a target="_blank" class="text-decoration-none footer-link d-flex align-items-center gap-2" href="https://wa.me/628155072777">
+              <i class="fa-brands fa-whatsapp"></i> 
+              +62 815-5072-777
+            </a>
+            <a class="text-decoration-none footer-link d-flex align-items-center gap-2" href="https://maps.google.com/?q=Jakarta+Selatan,+Pasar+Minggu+Baru,+Jl.Batu+1+Gang+Arab" target="_blank">
+              <i class="fa-solid fa-map-marker-alt"></i> 
+              Jakarta Selatan, Indonesia
+            </a>
+          </div>
+        </div>
+
+        <div class="copyright text-center mt-5">
+          <p>
+            &copy; Copyright by <span class="fw-bold text-primary-emphasis">Hafidz Nurfikri Ramadhani</span> 2026. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <!-- JS Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
