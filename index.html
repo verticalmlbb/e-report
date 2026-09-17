@@ -18,6 +18,16 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- CDN Animate CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- CSS Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -31,7 +41,9 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-3">
+    <nav
+      class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary-subtle py-3"
+    >
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
@@ -79,9 +91,11 @@
     <section id="hero">
       <div class="container">
         <div
-          class="hero row align-items-center gap-5 flex-nowrap flex-column text-center text-lg-start flex-lg-row"
+          class="hero row align-items-center gap-5 flex-nowrap flex-column text-center text-lg-start flex-lg-row overflow-hidden"
         >
-          <div class="col">
+          <div
+            class="col animate__animated animate__fadeInLeft animate__delay-1s"
+          >
             <h1 class="fw-bold">
               Selamat datang di <br />
               <span class="text-primary">Aplikasi IDN E-Report 2026</span> Forum
@@ -94,10 +108,14 @@
             </p>
             <div class="mt-5">
               <a class="btn btn-primary" href="#about">About Us</a>
-              <a class="btn btn-outline-primary" href="#services">Let's Start</a>
+              <a class="btn btn-outline-primary" href="#services"
+                >Let's Start</a
+              >
             </div>
           </div>
-          <div class="col d-flex justify-content-end justify-content-lg-end">
+          <div
+            class="col d-flex justify-content-end justify-content-lg-end animate__animated animate__fadeInRight animate__delay-2s"
+          >
             <img src="./assets/image/hero.png" alt="Hero Image" />
           </div>
         </div>
@@ -109,15 +127,32 @@
       <div class="container">
         <div class="about row">
           <div class="col text-center">
-            <h1 class="fw-bold text-primary mb-5">Tentang Kami</h1>
-            <p class="lh-lg fw-semibold fs-5 mb-5">
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="fw-bold text-primary mb-5"
+            >
+              Tentang Kami
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              class="lh-lg fw-semibold fs-5 mb-5"
+            >
               E-Report IDN adalah platform pengaduan online yang memungkinkan
               masyarakat untuk menyampaikan keluhan, masukan, atau aspirasi
               terkait layanan publik. Dengan E-Report IDN, kami berkomitmen
               untuk mendengarkan suara masyarakat dan memberikan solusi yang
               tepat.
             </p>
-            <img src="./assets/image/team.png" alt="Team Image" />
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              src="./assets/image/team.png"
+              alt="Team Image"
+            />
           </div>
         </div>
       </div>
@@ -127,8 +162,19 @@
     <section id="services">
       <div class="container">
         <div>
-          <h1 class="fw-bold text-primary">Layanan Kami</h1>
-          <p class="lh-lg">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="fw-bold text-primary"
+          >
+            Layanan Kami
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            class="lh-lg"
+          >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
             perferendis laboriosam quos optio quis temporibus dolore nobis, modi
             qui incidunt illum cumque at, exercitationem veritatis vero quaerat
@@ -138,6 +184,9 @@
         <!-- ditambah p-lg-0 untuk menghilangkan padding pada layar besar(Laptop) -->
         <div class="row p-4 p-lg-0 gap-4 gap-lg-2">
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
             class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
           >
             <i class="fa-solid fa-graduation-cap"></i>
@@ -148,6 +197,9 @@
             </p>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
             class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
           >
             <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -158,6 +210,9 @@
             </p>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
             class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
           >
             <i class="fa-solid fa-user-secret"></i>
@@ -175,8 +230,10 @@
     <section id="recent">
       <div class="container">
         <div class="text-end mb-5">
-          <h1 class="fw-bold text-primary">Laporan Terbaru</h1>
-          <p class="lh-lg">
+          <h1 data-aos="fade-up"
+            data-aos-duration="1000" class="fw-bold text-primary">Laporan Terbaru</h1>
+          <p data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="400" class="lh-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             numquam tempora quod consectetur aliquam officia quas? Eos sequi
             dolore tempore eius, dolorum nihil recusandae excepturi.
@@ -184,7 +241,10 @@
         </div>
         <!-- setiap column itu ada 12, maka dibagi 4 agar masing-masing column memiliki lebar 3 dan sebaris -->
         <div class="row mb-4">
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800">
             <div class="card">
               <p
                 style="background-color: rgba(0, 0, 0, 0.3)"
@@ -213,7 +273,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700">
             <div class="card">
               <p
                 style="background-color: rgba(0, 0, 0, 0.3)"
@@ -242,7 +305,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4" 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600">
             <div class="card">
               <p
                 style="background-color: rgba(0, 0, 0, 0.3)"
@@ -285,8 +351,8 @@
     <section>
       <div id="faq" class="container">
         <div class="row text-center">
-          <h1 class="fw-bold text-primary">FAQ</h1>
-          <p class="lh-lg">
+          <h1 class="fw-bold text-primary" data-aos="fade-up" data-aos-duration="1000">FAQ</h1>
+          <p class="lh-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
             commodi tempore! Et aliquam natus nulla nobis numquam aut, dolorum
             eveniet architecto voluptates omnis voluptate, itaque tempore sunt
@@ -481,9 +547,15 @@
     <footer class="bg-primary-subtle py-5">
       <div class="container">
         <div class="row justify-content-between row-gap-4 row-gap-md-0">
-          <div class="col-md-4 ">
+          <div class="col-md-4">
             <div class="d-flex align-items-center gap-2 mb-2">
-              <img class="rounded" src="./assets/image/idn.png" width="35" height="38" alt="IDN Logo" />
+              <img
+                class="rounded"
+                src="./assets/image/idn.png"
+                width="35"
+                height="38"
+                alt="IDN Logo"
+              />
               <h3 class="mb-0 fw-bold">E-Report</h3>
             </div>
             <p class="opacity-75 lh-lg mb-0">
@@ -495,25 +567,40 @@
             </p>
           </div>
           <div class="col-md-2 d-flex flex-column gap-2">
-              <h4 class="fw-bold text-primary-emphasis">Menu</h4>
-              <a class="text-decoration-none footer-link" href="#hero">Home</a>
-              <a class="text-decoration-none footer-link" href="#about">About</a>
-              <a class="text-decoration-none footer-link" href="#services">Services</a>
-              <a class="text-decoration-none footer-link" href="#recent">Recents</a>
-              <a class="text-decoration-none footer-link" href="#faq">FAQ</a>
+            <h4 class="fw-bold text-primary-emphasis">Menu</h4>
+            <a class="text-decoration-none footer-link" href="#hero">Home</a>
+            <a class="text-decoration-none footer-link" href="#about">About</a>
+            <a class="text-decoration-none footer-link" href="#services"
+              >Services</a
+            >
+            <a class="text-decoration-none footer-link" href="#recent"
+              >Recents</a
+            >
+            <a class="text-decoration-none footer-link" href="#faq">FAQ</a>
           </div>
           <div class="col-md-4 d-flex flex-column gap-4">
             <h4 class="fw-bold text-primary-emphasis">Contact Us</h4>
-            <a class="text-decoration-none footer-link d-flex align-items-center gap-2" href="mailto:verticalmlbb@gmail.com">
-              <i class="fa-solid fa-envelope"></i> 
+            <a
+              class="text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="mailto:verticalmlbb@gmail.com"
+            >
+              <i class="fa-solid fa-envelope"></i>
               verticalmlbb@gmail.com
             </a>
-            <a target="_blank" class="text-decoration-none footer-link d-flex align-items-center gap-2" href="https://wa.me/628155072777">
-              <i class="fa-brands fa-whatsapp"></i> 
+            <a
+              target="_blank"
+              class="text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://wa.me/628155072777"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
               +62 815-5072-777
             </a>
-            <a class="text-decoration-none footer-link d-flex align-items-center gap-2" href="https://maps.google.com/?q=Jakarta+Selatan,+Pasar+Minggu+Baru,+Jl.Batu+1+Gang+Arab" target="_blank">
-              <i class="fa-solid fa-map-marker-alt"></i> 
+            <a
+              class="text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://maps.google.com/?q=Jakarta+Selatan,+Pasar+Minggu+Baru,+Jl.Batu+1+Gang+Arab"
+              target="_blank"
+            >
+              <i class="fa-solid fa-map-marker-alt"></i>
               Jakarta Selatan, Indonesia
             </a>
           </div>
@@ -521,7 +608,11 @@
 
         <div class="copyright text-center mt-5">
           <p>
-            &copy; Copyright by <span class="fw-bold text-primary-emphasis">Hafidz Nurfikri Ramadhani</span> 2026. All Rights Reserved.
+            &copy; Copyright by
+            <span class="fw-bold text-primary-emphasis"
+              >Hafidz Nurfikri Ramadhani</span
+            >
+            2026. All Rights Reserved.
           </p>
         </div>
       </div>
@@ -538,5 +629,11 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
