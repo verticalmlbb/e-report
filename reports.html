@@ -481,15 +481,15 @@
               aria-label="Close"
             ></button>
           </div>
-          <form action="">
+            <form action="https://formspree.io/f/mqpalwov" method="POST" enctype="multipart/form-data">
               <div style="padding: 3rem;" class="modal-body">
                 <div class="mb-4">
                     <label class="form-label fw-semibold" for="">Judul Laporan:</label>
-                    <input class="form-control" type="text" placeholder="Masukkan judul laporan...">
+                <input class="form-control" type="text" name="judul_laporan" placeholder="Masukkan judul laporan..." required>
                 </div>
                 <div class="mb-4">
                     <label class="form-label fw-semibold" for="">Pilih Kategori:</label>
-                    <select class="form-select shadow-sm">
+                <select class="form-select shadow-sm" name="kategori" required>
                         <option value="">Pilih Kategori</option>
                         <option value="akademik">Akademik</option>
                         <option value="fasilitas">Fasilitas</option>
@@ -498,12 +498,13 @@
                 </div>
                 <div class="mb-4">
                     <label class="form-label fw-semibold" for=""> Isi Laporan:</label>
-                    <textarea class="form-control shadow-sm" placeholder="Tuliskan isi laporan anda..." rows="6"></textarea>
+                <textarea class="form-control shadow-sm" name="isi_laporan" placeholder="Tuliskan isi laporan anda..." rows="6" required></textarea>
                 </div>
                 <div class="mb-4">
                     <label class="form-label fw-semibold" for=""> Upload Gambar:</label>
-                    <input type="file" class="form-control" accept="Image/*">
+                <input type="file" class="form-control" name="gambar" accept="image/*">
                 </div>
+                <code>Uploading Images currently not working, do not upload image..</code>
               </div>
               <div class="modal-footer">
                 <button
