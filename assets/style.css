@@ -3,6 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Agar apabila discroll navbar tidak menghilang */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 .hero .col img {
     width: 500px;
 }
